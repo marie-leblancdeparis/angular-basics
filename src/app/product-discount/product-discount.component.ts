@@ -3,13 +3,12 @@ import { Input } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-product-alert',
-  templateUrl: './product-alert.component.html',
-  styleUrls: ['./product-alert.component.css']
+  selector: 'app-product-discount',
+  templateUrl: './product-discount.component.html',
+  styleUrls: ['./product-discount.component.css']
 })
-export class ProductAlertComponent implements OnInit {
+export class ProductDiscountComponent implements OnInit {
 
-  //  product will be passed from the parent component
   @Input() product;
   @Output() notify = new EventEmitter();
 
